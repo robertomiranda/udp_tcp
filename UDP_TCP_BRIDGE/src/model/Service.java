@@ -11,11 +11,15 @@ import java.util.HashMap;
  *
  * @author roberto
  */
-public class Service {
+public abstract class Service extends Thread {
 
     protected final static HashMap CLIENTS = new HashMap();
 
     public Service(){
     }
+
+
+    public abstract void startService();
+    public abstract void stopService();
 
 }
