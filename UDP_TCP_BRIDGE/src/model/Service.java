@@ -5,7 +5,7 @@
 
 package model;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public abstract class Service extends Thread {
 
-    protected final static HashMap CLIENTS = new HashMap();
+    protected final static ArrayList<Client> CLIENTS = new ArrayList<Client>();
 
     public Service(){
     }
