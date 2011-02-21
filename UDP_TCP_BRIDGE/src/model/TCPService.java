@@ -44,9 +44,10 @@ public class TCPService extends Service {
                         Socket socket = serverSocket.accept();
 
                         DataInputStream dis=new DataInputStream(socket.getInputStream());
-                        String nickName = dis.readUTF();
+                        String nickName="";
                         Client c = new Client(nickName,socket,CLIENTS);                        
                         CLIENTS.add(c);
+                        System.out.println("-------------------------------------");
 
                         System.out.println(CLIENTS.size());
                   }catch (IOException ex) {
