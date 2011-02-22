@@ -66,7 +66,12 @@ public class UDPService extends Service {
     public void notifyClients(String message) throws IOException{
         for(Object object: CLIENTS){
             Client client = (Client) object;
-            client.sendMessage(message);
+            try{
+                client.sendMessage(message);
+            }catch(java.net.SocketException ex){
+                CLIENTS.remove(client);
+            }
+           
         }
     }
 
