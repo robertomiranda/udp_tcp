@@ -50,7 +50,7 @@
                     <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R193_R25"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VWelcome"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
-                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A2:3_R223_R23"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:3_R23"/>
                     <Component componentID="19" typeID="C#CommandEventSource">
                         <Property name="eventHandler" typeID="C#EventHandler" value="R20"/>
                         <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R14"/>
@@ -59,15 +59,6 @@
                             <Property name="eventSource" typeID="C#EventSource" value="R19"/>
                             <Property name="mobileDevice" typeID="C#MobileDevice" value="R2"/>
                         </Component>
-                    </Component>
-                    <Component componentID="22" typeID="Cjavax.microedition.lcdui.TextField">
-                        <Property name="instanceName" typeID="Pjava.lang.String" value="VtextField"/>
-                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                        <Property name="label" typeID="Pjava.lang.String" value="Vport"/>
-                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R17"/>
-                        <Property name="text" typeID="Pjava.lang.String" value="V"/>
-                        <Property name="maxSize" typeID="Pint" value="V32"/>
-                        <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
                     <Component componentID="23" typeID="Cjavax.microedition.lcdui.TextField">
                         <Property name="instanceName" typeID="Pjava.lang.String" value="VtextField1"/>
@@ -117,8 +108,8 @@
         </Component>
     </Document>
     <FlowScene version="1">
+        <Node componentID="26" descriptorID="componentNode26" x="569" y="221"/>
         <Node componentID="2" descriptorID="componentNode2" x="24" y="26"/>
         <Node componentID="14" descriptorID="componentNode14" x="279" y="159"/>
-        <Node componentID="26" descriptorID="componentNode26" x="569" y="221"/>
     </FlowScene>
 </VisualDesign>

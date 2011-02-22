@@ -1,5 +1,5 @@
 MIDlet-1: HelloMIDlet, ,view.HelloMIDlet
-MIDlet-Jar-Size: 4746
+MIDlet-Jar-Size: 4687
 MIDlet-Jar-URL: SocketClient.jar
 MIDlet-Name: SocketClient
 MIDlet-Vendor: Vendor

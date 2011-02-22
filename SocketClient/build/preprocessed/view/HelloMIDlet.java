@@ -22,7 +22,6 @@ public class HelloMIDlet extends MIDlet implements CommandListener, observador.O
     private Command okCommand;
     private Command exitCommand1;
     private Form form;
-    private TextField textField;
     private TextField textField1;
     private Form form1;
     private StringItem stringItem;
@@ -106,7 +105,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener, observador.O
                 // write pre-action user code here
                 switchDisplayable(null, getForm1());//GEN-LINE:|7-commandAction|4|25-postAction
                 // write post-action user code here
-                String port = textField.getString();
+                String port = "8989";
                 String ip = textField1.getString();
                 try {
                     TCPClient.getInstance(port, ip).addObservers(this);
@@ -148,7 +147,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener, observador.O
     public Form getForm() {
         if (form == null) {//GEN-END:|14-getter|0|14-preInit
             // write pre-init user code here
-            form = new Form("Welcome", new Item[] { getTextField(), getTextField1() });//GEN-BEGIN:|14-getter|1|14-postInit
+            form = new Form("Welcome", new Item[] { getTextField1() });//GEN-BEGIN:|14-getter|1|14-postInit
             form.addCommand(getExitCommand());
             form.addCommand(getOkCommand());
             form.setCommandListener(this);//GEN-END:|14-getter|1|14-postInit
@@ -190,20 +189,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener, observador.O
     }
     //</editor-fold>//GEN-END:|28-getter|2|
 
-    //<editor-fold defaultstate="collapsed" desc=" Generated Getter: textField ">//GEN-BEGIN:|22-getter|0|22-preInit
-    /**
-     * Returns an initiliazed instance of textField component.
-     * @return the initialized component instance
-     */
-    public TextField getTextField() {
-        if (textField == null) {//GEN-END:|22-getter|0|22-preInit
-            // write pre-init user code here
-            textField = new TextField("port", "", 32, TextField.ANY);//GEN-LINE:|22-getter|1|22-postInit
-            // write post-init user code here
-        }//GEN-BEGIN:|22-getter|2|
-        return textField;
-    }
-    //</editor-fold>//GEN-END:|22-getter|2|
+
 
     //<editor-fold defaultstate="collapsed" desc=" Generated Getter: textField1 ">//GEN-BEGIN:|23-getter|0|23-preInit
     /**
